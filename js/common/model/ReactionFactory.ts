@@ -14,11 +14,14 @@
 import C2H2Node from '../../../../nitroglycerin/js/nodes/C2H2Node.js';
 import C2H4Node from '../../../../nitroglycerin/js/nodes/C2H4Node.js';
 import C2H5ClNode from '../../../../nitroglycerin/js/nodes/C2H5ClNode.js';
+import C2H3ClONode from '../../../../nitroglycerin/js/nodes/C2H3ClONode.js';
 import C2H5OHNode from '../../../../nitroglycerin/js/nodes/C2H5OHNode.js';
 import C2H6Node from '../../../../nitroglycerin/js/nodes/C2H6Node.js';
 import C6H6Node from '../../../../nitroglycerin/js/nodes/C6H6Node.js';
+import C10H14Node from '../../../../nitroglycerin/js/nodes/C10H14Node.js';
 import C4H7ClONode from '../../../../nitroglycerin/js/nodes/C4H7ClONode.js';
 import C10H12ONode from '../../../../nitroglycerin/js/nodes/C10H12ONode.js';
+import C12H16ONode from '../../../../nitroglycerin/js/nodes/C12H16ONode.js';
 import CH2ONode from '../../../../nitroglycerin/js/nodes/CH2ONode.js';
 import CH3OHNode from '../../../../nitroglycerin/js/nodes/CH3OHNode.js';
 import CH4Node from '../../../../nitroglycerin/js/nodes/CH4Node.js';
@@ -248,8 +251,8 @@ const ReactionFactory = {
   Reaction_steponeIbu( tandem = Tandem.OPT_OUT ): Reaction {
     return new Reaction(
       [ new Substance( 1, RPALSymbols.C6H6, new C6H6Node( MOLECULE_NODE_OPTIONS ) ),
-        new Substance( 1, RPALSymbols.C4H7ClO, new H2ONode( MOLECULE_NODE_OPTIONS ) ) ],
-      [ new Substance( 1, RPALSymbols.C10H12O, new CH4Node( MOLECULE_NODE_OPTIONS ) ),
+        new Substance( 1, RPALSymbols.C4H7ClO, new C4H7ClONode( MOLECULE_NODE_OPTIONS ) ) ],
+      [ new Substance( 1, RPALSymbols.C10H12O, new C10H12ONode( MOLECULE_NODE_OPTIONS ) ),
         new Substance( 1, RPALSymbols.HCl, new HClNode( MOLECULE_NODE_OPTIONS ) ) ],
       {
         nameProperty: ReactantsProductsAndLeftoversStrings.Reaction_steponeIbu,
@@ -257,19 +260,19 @@ const ReactionFactory = {
       } );
   },
 
-  Reaction_test( tandem = Tandem.OPT_OUT ): Reaction {
+  // isobutyl benzene (C10H14) + acetyl chloride (C2H3ClO) -> Isobutylacetophenone (C12H16O) + HCl
+  R_stepthreeIbu( tandem = Tandem.OPT_OUT ): Reaction {
     return new Reaction(
-      [ new Substance( 1, RPALSymbols.C6H6, new C6H6Node( MOLECULE_NODE_OPTIONS ) ),
-        new Substance( 1, RPALSymbols.C4H7ClO, new H2ONode( MOLECULE_NODE_OPTIONS ) ) ],
-      [ new Substance( 1, RPALSymbols.C10H12O, new CH4Node( MOLECULE_NODE_OPTIONS ) ),
+      [ new Substance( 1, RPALSymbols.C10H14, new C10H14Node( MOLECULE_NODE_OPTIONS ) ),
+        new Substance( 1, RPALSymbols.C2H3ClO, new C2H3ClONode( MOLECULE_NODE_OPTIONS ) ) ],
+      [ new Substance( 1, RPALSymbols.C12H16O, new C12H16ONode( MOLECULE_NODE_OPTIONS ) ),
         new Substance( 1, RPALSymbols.HCl, new HClNode( MOLECULE_NODE_OPTIONS ) ) ],
       {
-        nameProperty: ReactantsProductsAndLeftoversStrings.Reaction_test,
+        nameProperty: ReactantsProductsAndLeftoversStrings.R_stepthreeIbu,
         tandem: tandem
       } );
   },
 
-  // isobutyl benzene (C10H14) + acetyl chloride (C2H3ClO) -> Isobutylacetophenone (C12H16O) + HCl
 //  Reaction_stepthreeIbu( tandem = Tandem.OPT_OUT ): Reaction {
 //    return new Reaction(
 //      [ new Substance( 1, RPALSymbols.C10H14, new C6H6Node( MOLECULE_NODE_OPTIONS ) ),

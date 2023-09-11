@@ -19,8 +19,8 @@ export default class MoleculesModel extends RPALBaseModel {
 
     const reactions = [
       ReactionFactory.combustMethane( reactionsTandem.createTandem( 'combustMethane' ) ),
-      ReactionFactory.Reaction_steponeIbu( reactionsTandem.createTandem( 'Reaction_steponeIbu' ) )//,
-//      ReactionFactory.Reaction_test( reactionsTandem.createTandem( 'Reaction_test' ) )
+      ReactionFactory.Reaction_steponeIbu( reactionsTandem.createTandem( 'Reaction_steponeIbu' ) ),
+      ReactionFactory.R_stepthreeIbu( reactionsTandem.createTandem( 'Reaction_test' ) )
     ];
 
     super( reactions, tandem );
