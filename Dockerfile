@@ -13,7 +13,7 @@ ADD . /app
 #RUN mkdir -pv $APP_HOME
 #WORKDIR $APP_HOME
 #ADD . $APP_HOME
-#COPY package.json $APP_HOME
+
 ENV NODE_ENV production
 ENV NPM_CONFIG_LOGLEVEL warn
 # ADD CUSTOM REGISTRY HERE IF REQUIRED
@@ -48,16 +48,18 @@ RUN git clone https://github.com/phetsims/vegas.git
 
 #RUN cd /chipper
 #RUN cd $APP_HOME/chipper
-RUN cd /app/chipper
+#RUN cd /app/chipper
+WORKDIR /app/chipper
 RUN npm install
-RUN cd /app/perennial-alias
+#RUN cd /app/perennial-alias
 #RUN cd $APP_HOME/perennial-alias
 #RUN cd /perennial-alias
+WORKDIR /app/perennial-alias
 RUN npm install
 #RUN cd /reactants-products-and-leftovers
 #RUN cd $APP_HOME/reactants-products-and-leftovers
-RUN cd /app/reactants-products-and-leftovers
+#RUN cd /app/reactants-products-and-leftovers
+WORKDIR /app/reactants-products-and-leftovers
 RUN npm install
-COPY package.json /app
 
 EXPOSE 8080
