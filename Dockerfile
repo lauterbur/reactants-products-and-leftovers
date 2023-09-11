@@ -38,9 +38,9 @@ RUN git clone https://github.com/phetsims/twixt.git
 RUN git clone https://github.com/phetsims/utterance-queue.git
 RUN git clone https://github.com/phetsims/vegas.git
 
-RUN cd chipper
+RUN cd $APP_HOME/chipper
 RUN npm install
-RUN cd ../perennial-alias
+RUN cd $APP_HOME/perennial-alias
 RUN npm install
-RUN cd ../reactants-products-and-leftovers
+RUN cd $APP_HOME/reactants-products-and-leftovers
 RUN npm install
