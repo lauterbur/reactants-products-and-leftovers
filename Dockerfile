@@ -27,7 +27,7 @@ RUN git clone https://github.com/phetsims/phet-core.git
 RUN git clone https://github.com/phetsims/phetcommon.git
 RUN git clone https://github.com/phetsims/phetmarks.git
 RUN git clone https://github.com/phetsims/query-string-machine.git
-RUN git clone https://github.com/phetsims/reactants-products-and-leftovers.git
+RUN git clone https://github.com/lauterbur/reactants-products-and-leftovers.git
 RUN git clone https://github.com/phetsims/scenery.git
 RUN git clone https://github.com/phetsims/scenery-phet.git
 RUN git clone https://github.com/phetsims/sherpa.git
