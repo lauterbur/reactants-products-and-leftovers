@@ -4,7 +4,7 @@
 #
 
 app = "blue-sun-4088"
-primary_region = "phx"
+primary_region = "ams"
 
 [build]
 
