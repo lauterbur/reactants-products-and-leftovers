@@ -22,7 +22,7 @@ RUN git clone https://github.com/phetsims/dot.git
 RUN git clone https://github.com/phetsims/joist.git
 RUN git clone https://github.com/phetsims/kite.git
 RUN git clone https://github.com/lauterbur/phet-nitroglycerin.git
-RUN git clone https://github.com/phetsims/perennial.RUN git perennial-alias
+RUN git clone https://github.com/phetsims/perennial.git perennial-alias
 RUN git clone https://github.com/phetsims/phet-core.git
 RUN git clone https://github.com/phetsims/phetcommon.git
 RUN git clone https://github.com/phetsims/phetmarks.git
