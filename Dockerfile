@@ -1,6 +1,8 @@
 FROM node:latest
 LABEL maintainer="M. Elise Lauterbur <lauterbur@gmail.com> for AAUW"
 
+ENV PORT "8080"
+CMD ["-enable-url-source","-http-read-timeout" ,"3"]
 
 ENV APP_HOME /app
 RUN mkdir -pv $APP_HOME
