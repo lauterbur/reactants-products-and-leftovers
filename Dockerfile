@@ -8,7 +8,6 @@ ENV LOG_LEVEL "debug"
 WORKDIR /app
 COPY . /app
 ADD . /app
-COPY package.json /app
 
 #ENV APP_HOME /app
 #RUN mkdir -pv $APP_HOME
@@ -48,13 +47,17 @@ RUN git clone https://github.com/phetsims/utterance-queue.git
 RUN git clone https://github.com/phetsims/vegas.git
 
 #RUN cd /chipper
-RUN cd $APP_HOME/chipper
+#RUN cd $APP_HOME/chipper
+RUN cd /app/chipper
 RUN npm install
-RUN cd $APP_HOME/perennial-alias
+RUN cd /app/perennial-alias
+#RUN cd $APP_HOME/perennial-alias
 #RUN cd /perennial-alias
 RUN npm install
 #RUN cd /reactants-products-and-leftovers
-RUN cd $APP_HOME/reactants-products-and-leftovers
+#RUN cd $APP_HOME/reactants-products-and-leftovers
+RUN cd /app/reactants-products-and-leftovers
 RUN npm install
+COPY package.json /app
 
 EXPOSE 8080
