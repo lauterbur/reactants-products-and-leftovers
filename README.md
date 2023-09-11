@@ -7,23 +7,6 @@ For a description of this simulation, associated resources, and a link to the pu
 <a href="https://phet.colorado.edu/en/simulation/reactants-products-and-leftovers" target="_blank">visit the
 simulation's web page</a>.
 
-### Try it!
-
-<a href="https://phet.colorado.edu/sims/html/reactants-products-and-leftovers/latest/reactants-products-and-leftovers_en.html" target="_blank">
-Click here to run "Reactants, Products and Leftovers".</a>
-
-<a href="https://phet.colorado.edu/sims/html/reactants-products-and-leftovers/latest/reactants-products-and-leftovers_en.html" target="_blank">
-<img src="https://raw.githubusercontent.com/phetsims/reactants-products-and-leftovers/main/assets/reactants-products-and-leftovers-screenshot.png" alt="Screenshot" style="width: 400px;"/>
-</a>
-
-### Documentation
-
-The <a href="https://github.com/phetsims/phet-info/blob/main/doc/phet-development-overview.md" target="_blank">PhET
-Development Overview</a> is the most complete guide to PhET Simulation
-Development. This guide includes how to obtain simulation code and its dependencies, notes about architecture & design,
-how to test and build
-the sims, as well as other important information.
-
 ### Quick Start
 
 (1) Clone the simulation and its dependencies:
@@ -37,13 +20,13 @@ git clone https://github.com/phetsims/chipper.git
 git clone https://github.com/phetsims/dot.git
 git clone https://github.com/phetsims/joist.git
 git clone https://github.com/phetsims/kite.git
-git clone https://github.com/phetsims/nitroglycerin.git
+git clone https://github.com/lauterbur/nitroglycerin.git
 git clone https://github.com/phetsims/perennial.git perennial-alias
 git clone https://github.com/phetsims/phet-core.git
 git clone https://github.com/phetsims/phetcommon.git
 git clone https://github.com/phetsims/phetmarks.git
 git clone https://github.com/phetsims/query-string-machine.git
-git clone https://github.com/phetsims/reactants-products-and-leftovers.git
+git clone https://github.com/lauterbur/reactants-products-and-leftovers.git
 git clone https://github.com/phetsims/scenery.git
 git clone https://github.com/phetsims/scenery-phet.git
 git clone https://github.com/phetsims/sherpa.git
@@ -84,17 +67,8 @@ like `>> WARNING404: Skipping potentially non-public dependency`,
 which indicate that non-public PhET-iO code is not being included in the build.
 
 (3) Open in the
-browser: `http://localhost/reactants-products-and-leftovers/build/adapted-from-phet/reactants-products-and-leftovers_en_adapted-from-phet.html` (
-You will probably need to modify this URL based on your HTTP port and relative path.)
-
-### Get Involved
-
-Contact us at our Google
-Group: <a href="http://groups.google.com/forum/#!forum/developing-interactive-simulations-in-html5" target="_blank">
-Developing Interactive Simulations in HTML5</a>
-
-Help us improve, create
-a <a href="http://github.com/phetsims/reactants-products-and-leftovers/issues/new" target="_blank">New Issue</a>
+browser: `http://0.0.0.0:8080/reactants-products-and-leftovers/reactants-products-and-leftovers_en.html` (
+You may need to modify this URL based on your HTTP port (8080 in this example) and relative path.)
 
 ### License
 
