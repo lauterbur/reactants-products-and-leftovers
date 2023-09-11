@@ -19,6 +19,12 @@ import C2H4Node from '../../../../nitroglycerin/js/nodes/C2H4Node.js';
 import C2H5ClNode from '../../../../nitroglycerin/js/nodes/C2H5ClNode.js';
 import C2H5OHNode from '../../../../nitroglycerin/js/nodes/C2H5OHNode.js';
 import C2H6Node from '../../../../nitroglycerin/js/nodes/C2H6Node.js';
+import C6H6Node from '../../../../nitroglycerin/js/nodes/C6H6Node.js';
+import C2H3ClONode from '../../../../nitroglycerin/js/nodes/C2H3ClONode.js';
+import C4H7ClONode from '../../../../nitroglycerin/js/nodes/C4H7ClONode.js';
+import C10H12ONode from '../../../../nitroglycerin/js/nodes/C10H12ONode.js';
+import C10H14Node from '../../../../nitroglycerin/js/nodes/C10H14Node.js';
+import C12H16ONode from '../../../../nitroglycerin/js/nodes/C12H16ONode.js';
 import CH2ONode from '../../../../nitroglycerin/js/nodes/CH2ONode.js';
 import CH3OHNode from '../../../../nitroglycerin/js/nodes/CH3OHNode.js';
 import CH4Node from '../../../../nitroglycerin/js/nodes/CH4Node.js';
@@ -58,7 +64,7 @@ const NUMBER_OF_NODES = 100; // number of Nodes for each reward
 
 // constructors for all molecules & atoms that appear in reactions, to appear in Level 1 reward
 const MOLECULE_NODE_CONSTRUCTORS = [
-  C2H2Node, C2H4Node, C2H5ClNode, C2H5OHNode, C2H6Node, CH2ONode,
+  C2H2Node, C2H4Node, C2H5ClNode, C2H5OHNode, C2H6Node, C6H6Node, C4H7ClONode, C10H12ONode, CH2ONode,
   CH3OHNode, CH4Node, Cl2Node, CNode, CO2Node, CONode, CS2Node,
   F2Node,
   H2Node, H2ONode, H2SNode, HClNode, HFNode,

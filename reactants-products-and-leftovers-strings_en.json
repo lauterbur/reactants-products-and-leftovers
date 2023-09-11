@@ -44,6 +44,15 @@
   "makeAmmonia": {
     "value": "Make Ammonia"
   },
+  "Reaction_steponeIbu": {
+    "value": "Ibuprofen, step 1"
+  },
+  "Reaction_stepthreeIbu": {
+    "value": "Ibuprofen, step 3"
+  },
+  "Reaction_test": {
+    "value": "Ibuprofen, step 3"
+  },
   "combustMethane": {
     "value": "Combust Methane"
   },

@@ -12,6 +12,12 @@ import C2H4Node from '../../../../nitroglycerin/js/nodes/C2H4Node.js';
 import C2H5ClNode from '../../../../nitroglycerin/js/nodes/C2H5ClNode.js';
 import C2H5OHNode from '../../../../nitroglycerin/js/nodes/C2H5OHNode.js';
 import C2H6Node from '../../../../nitroglycerin/js/nodes/C2H6Node.js';
+import C2H3ClONode from '../../../../nitroglycerin/js/nodes/C2H3ClONode.js';
+import C6H6Node from '../../../../nitroglycerin/js/nodes/C6H6Node.js';
+import C10H14Node from '../../../../nitroglycerin/js/nodes/C10H14Node.js';
+import C4H7ClONode from '../../../../nitroglycerin/js/nodes/C4H7ClONode.js';
+import C10H12ONode from '../../../../nitroglycerin/js/nodes/C10H12ONode.js';
+import C12H16ONode from '../../../../nitroglycerin/js/nodes/C12H16ONode.js';
 import CH2ONode from '../../../../nitroglycerin/js/nodes/CH2ONode.js';
 import CH3OHNode from '../../../../nitroglycerin/js/nodes/CH3OHNode.js';
 import CH4Node from '../../../../nitroglycerin/js/nodes/CH4Node.js';
@@ -52,6 +58,9 @@ const MoleculeNodes = {
   C2H5Cl: new C2H5ClNode( OPTIONS ),
   C2H5OH: new C2H5OHNode( OPTIONS ),
   C2H6: new C2H6Node( OPTIONS ),
+  C6H6: new C6H6Node( OPTIONS ),
+  C4H7ClO: new C4H7ClONode( OPTIONS ),
+  C10H12O: new C10H12ONode( OPTIONS ),
   CH2O: new CH2ONode( OPTIONS ),
   CH3OH: new CH3OHNode( OPTIONS ),
   CH4: new CH4Node( OPTIONS ),
