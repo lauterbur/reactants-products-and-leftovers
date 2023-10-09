@@ -64,7 +64,9 @@ const NUMBER_OF_NODES = 100; // number of Nodes for each reward
 
 // constructors for all molecules & atoms that appear in reactions, to appear in Level 1 reward
 const MOLECULE_NODE_CONSTRUCTORS = [
-  C2H2Node, C2H4Node, C2H5ClNode, C2H5OHNode, C2H6Node, C6H6Node, C4H7ClONode, C10H12ONode, CH2ONode,
+  C2H2Node, C2H4Node, C2H5ClNode, C2H5OHNode, C2H6Node, C6H6Node, 
+// C4H7ClONode, C10H12ONode, C10H14, C12H16O, 
+  CH2ONode,
   CH3OHNode, CH4Node, Cl2Node, CNode, CO2Node, CONode, CS2Node,
   F2Node,
   H2Node, H2ONode, H2SNode, HClNode, HFNode,

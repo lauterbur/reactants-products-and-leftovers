@@ -16,7 +16,7 @@ const RPALSymbols = {
   C2H5OH: 'C<sub>2</sub>H<sub>5</sub>OH',
   C2H6: 'C<sub>2</sub>H<sub>6</sub>',
   C6H6: 'C<sub>6</sub>H<sub>6</sub>',
-  C2H3ClO: 'C<sub>4</sub>H<sub>7</sub>ClO',
+  C2H3ClO: 'C<sub>2</sub>H<sub>3</sub>ClO',
   C4H7ClO: 'C<sub>4</sub>H<sub>7</sub>ClO',
   C10H14: 'C<sub>10</sub>H<sub>14</sub>',
   C10H12O: 'C<sub>10</sub>H<sub>12</sub>O',

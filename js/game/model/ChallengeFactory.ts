@@ -60,7 +60,7 @@ const LEVEL2_POOL: FactoryFunction[] = [
 // level 3 is all the two-product reactions
 const LEVEL3_POOL: FactoryFunction[] = [
   ReactionFactory.Reaction_C2H5OH_3O2__2CO2_3H2O, // C2H5OH has the most atoms in this pool, so put this first for performance debugging
-  ReactionFactory.Reaction_2C_2H2O__CH4_CO2,
+  ReactionFactory.Make_2C_2H2O__CH4_CO2,
   ReactionFactory.Reaction_CH4_H2O__3H2_CO,
   ReactionFactory.combustMethane,
   ReactionFactory.Reaction_2C2H6_7O2__4CO2_6H2O,

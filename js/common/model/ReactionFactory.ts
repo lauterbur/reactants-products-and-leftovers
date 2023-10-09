@@ -275,16 +275,16 @@ const ReactionFactory = {
 
 //  Reaction_stepthreeIbu( tandem = Tandem.OPT_OUT ): Reaction {
 //    return new Reaction(
-//      [ new Substance( 1, RPALSymbols.C10H14, new C6H6Node( MOLECULE_NODE_OPTIONS ) ),
-//        new Substance( 1, RPALSymbols.C2H3ClO, new H2ONode( MOLECULE_NODE_OPTIONS ) ) ],
-//      [ new Substance( 1, RPALSymbols.C12H16O, new CH4Node( MOLECULE_NODE_OPTIONS ) ),
- //       new Substance( 1, RPALSymbols.HCl, new HClNode( MOLECULE_NODE_OPTIONS ) ) ],
- //     {
- //       nameProperty: ReactantsProductsAndLeftoversStrings.Reaction_stepthreeIbu,
- //       tandem: tandem
- //     } );
- // },
-    
+//      [ new Substance( 1, RPALSymbols.C10H14, new C10H14Node( MOLECULE_NODE_OPTIONS ) ),
+//        new Substance( 1, RPALSymbols.C2H3ClO, new C2H3ClONode( MOLECULE_NODE_OPTIONS ) ) ],
+//      [ new Substance( 1, RPALSymbols.C12H16O, new C12H16ONode( MOLECULE_NODE_OPTIONS ) ),
+//        new Substance( 1, RPALSymbols.HCl, new HClNode( MOLECULE_NODE_OPTIONS ) ) ],
+//      {
+//        nameProperty: ReactantsProductsAndLeftoversStrings.Reaction_stepthreeIbu,
+//        tandem: tandem
+//      } );
+//  },
+
   // CH4 + 2 O2 -> CO2 + 2 H2O (Combust Methane)
   combustMethane( tandem = Tandem.OPT_OUT ): Reaction {
     return new Reaction(
@@ -299,12 +299,16 @@ const ReactionFactory = {
   },
 
   // 2C + 2H2O -> CH4 + CO2
-  Reaction_2C_2H2O__CH4_CO2(): Reaction {
+  Make_2C_2H2O__CH4_CO2( tandem = Tandem.OPT_OUT ): Reaction {
     return new Reaction(
       [ new Substance( 2, RPALSymbols.C, new CNode( MOLECULE_NODE_OPTIONS ) ),
         new Substance( 2, RPALSymbols.H2O, new H2ONode( MOLECULE_NODE_OPTIONS ) ) ],
       [ new Substance( 1, RPALSymbols.CH4, new CH4Node( MOLECULE_NODE_OPTIONS ) ),
-        new Substance( 1, RPALSymbols.CO2, new CO2Node( MOLECULE_NODE_OPTIONS ) ) ] );
+        new Substance( 1, RPALSymbols.CO2, new CO2Node( MOLECULE_NODE_OPTIONS ) ) ],
+      {
+        nameProperty: ReactantsProductsAndLeftoversStrings.Make_2C_2H2O__CH4_CO2,
+        tandem: tandem
+      } );
   },
 
   // CH4 + H2O -> 3H2 + CO
